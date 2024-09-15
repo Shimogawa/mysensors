@@ -1,0 +1,9 @@
+[package]
+name = "exporter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sensors = { path = "../sensors" }
+metrics = "0.23"
+metrics-exporter-prometheus = { version = "0.15", features = ["http-listener"] }
